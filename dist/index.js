@@ -1586,7 +1586,7 @@ function (_React$Component) {
                   port: port,
                   path: path
                 }), {
-                  credentials: 'same-origin',
+                  credentials: 'include',
                   method: method,
                   body: JSON.stringify(body),
                   headers: this._headers

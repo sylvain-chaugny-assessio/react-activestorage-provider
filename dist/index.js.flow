@@ -82,7 +82,7 @@ class ActiveStorageProvider extends React.Component<Props> {
     }
 
     const response = await fetch(buildUrl({ protocol, host, port, path }), {
-      credentials: 'same-origin',
+      credentials: 'include',
       method,
       body: JSON.stringify(body),
       headers: this._headers,
